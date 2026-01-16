@@ -1,0 +1,38 @@
+# Chứa các file build của Gradle
+.gradle/
+build/
+/*/build/
+
+# Các file cấu hình cục bộ (chứa đường dẫn SDK trên máy cá nhân)
+local.properties
+
+# File log và các file tạm của hệ thống
+*.log
+.DS_Store
+captures/
+
+# Các file của Android Studio / IntelliJ IDEA
+.idea/workspace.xml
+.idea/libraries/
+.idea/modules.xml
+.idea/deploymentTargetDropDown.xml
+.idea/assetWizardSettings.xml
+*.iml
+*.ipr
+*.iws
+
+# Các file liên quan đến build và signing (QUAN TRỌNG: Không nên đưa khóa bảo mật lên Git)
+*.jks
+*.keystore
+*.pk8
+*.p12
+google-services.json
+
+# Backup files
+*.bak
+*.swp
+
+# Thư mục bundle và apk khi build ra
+*.apk
+*.aab
+*.ap_
