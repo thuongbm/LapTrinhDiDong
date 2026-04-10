@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText android:id="@+id/edtGaDi" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Ga đi" />
+    <EditText android:id="@+id/edtGaDen" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Ga đến" />
+    <EditText android:id="@+id/edtGia" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Đơn giá" android:inputType="numberDecimal" />
+
+    <RadioGroup android:id="@+id/rgLoai" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="10dp">
+        <RadioButton android:id="@+id/rbKhuHoi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Khứ Hồi" />
+        <RadioButton android:id="@+id/rbMotChieu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Một Chiều" />
+    </RadioGroup>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:layout_marginTop="20dp">
+        <Button android:id="@+id/btnSua" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SỬA" android:backgroundTint="#6200EE" android:textColor="@android:color/white" android:layout_marginEnd="10dp"/>
+        <Button android:id="@+id/btnQuayVe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="QUAY VỀ" android:backgroundTint="#6200EE" android:textColor="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>
