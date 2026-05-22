@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="Tìm kiếm..." />
+        <Button
+            android:id="@+id/btnSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sắp xếp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDiemTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutTop"
+        android:background="#CCCCCC"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Điểm trung bình:"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvDiemTrungBinhChung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutDiemTB" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@android:drawable/ic_input_add" />
+</RelativeLayout>

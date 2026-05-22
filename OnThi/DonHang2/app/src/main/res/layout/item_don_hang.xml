@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="#2C2C2C"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/txtTenHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nước giặt"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtLoaiGiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/txtTenHang"
+        android:layout_marginStart="20dp"
+        android:text="Thường"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/txtNgayDat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="15/01/2023"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/txtGiaGoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTenHang"
+        android:layout_marginTop="8dp"
+        android:text="Giá: 1.000.000"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/txtThanhTien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNgayDat"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:text="Thành tiền: 1.108.000"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</RelativeLayout>

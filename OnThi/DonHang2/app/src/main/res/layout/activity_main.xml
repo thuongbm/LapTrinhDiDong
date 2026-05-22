@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#E0E0E0">
+
+    <LinearLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Tìm kiếm..."
+            android:textColorHint="#757575"
+            android:textColor="#000000"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:drawableStart="@android:drawable/ic_menu_search" />
+
+        <Button
+            android:id="@+id/btnSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sắp xếp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTrungBinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutTop"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="Trung bình"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvDonHang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtTrungBinh"
+        android:layout_marginTop="5dp"
+        android:divider="@null" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="Thêm đơn hàng mới" />
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/lnHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#D3D3D3"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="8dp"
+            android:src="@android:drawable/ic_menu_search"
+            app:tint="#555555" />
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:hint="dd/MM/yyyy"
+            android:textSize="14sp"
+            android:inputType="date"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnSapXep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sắp xếp"
+            android:textAllCaps="false"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#000000"
+            style="@style/Widget.AppCompat.Button.Small"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnTrungBinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lnHeader"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#EAEAEA">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trung bình"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvTrungBinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 015 000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvDonHang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lnTrungBinh"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:padding="4dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#555555"
+        app:tint="#FFFFFF"
+        app:fabSize="mini"
+        android:contentDescription="Thêm đơn hàng" />
+
+</RelativeLayout>
